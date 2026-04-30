@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agwora Ombati Brian — Data Analyst | Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span></span>AGWORA O. BRIAN
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="wants.html">What I Want</a></li>
+      <li><a href="toolkit.html">Toolkit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="projects.html" onclick="closeMobile()">Projects</a>
+  <a href="hobbies.html" onclick="closeMobile()">Hobbies</a>
+  <a href="wants.html" onclick="closeMobile()">What I Want</a>
+  <a href="toolkit.html" onclick="closeMobile()">Toolkit</a>
+  <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<section id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Statistician &amp; Future Data Scientist</div>
+    <h1 class="hero-headline">
+      I don't<br>chase <em>jobs.</em><br>I chase<br>problems.
+    </h1>
+    <p class="hero-bio">
+      I build bridges between raw numbers and human decisions — whether that's explaining why a music video went viral or predicting what customers do before they do it.<br><br>
+      I'm not looking for a spot to fill. I'm looking for a team that wants to grow <em>with</em> me. If you see data as a conversation, not a commandment — we should talk.
+    </p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn btn-primary">Let's Connect</a>
+      <a href="projects.html" class="btn btn-outline">See the Work</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-wrapper">
+      <div class="hero-photo-frame">
+        <img src="profile.jpg" alt="Agwora Ombati Brian" style="width:100%;height:100%;object-fit:cover;" />
+        <div class="photo-glow"></div>
+        <div class="photo-label">Agwora Ombati Brian · Nairobi, KE</div>
+      </div>
+    </div>
+
+    <div class="hero-stats-row">
+      <div class="hero-stat-card">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Data projects completed</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-num">5</div>
+        <div class="stat-label">ML frameworks used</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Questions left to ask</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-name">AGWORA OMBATI BRIAN</span>
+  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

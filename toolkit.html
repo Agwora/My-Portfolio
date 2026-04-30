@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agwora Ombati Brian — Toolkit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span></span>AGWORA O. BRIAN
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="wants.html">What I Want</a></li>
+      <li><a href="toolkit.html">Toolkit</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMobile()">Home</a>
+  <a href="projects.html" onclick="closeMobile()">Projects</a>
+  <a href="hobbies.html" onclick="closeMobile()">Hobbies</a>
+  <a href="wants.html" onclick="closeMobile()">What I Want</a>
+  <a href="toolkit.html" onclick="closeMobile()">Toolkit</a>
+  <a href="contact.html" onclick="closeMobile()">Contact</a>
+</div>
+
+<section id="toolkit">
+  <div class="section-header reveal">
+    <span class="section-number">04</span>
+    <h2 class="section-title">The <em>Toolkit</em></h2>
+  </div>
+  <div class="toolkit-grid reveal">
+    <div class="toolkit-card">
+      <div class="toolkit-category">Stats &amp; Testing</div>
+      <ul class="toolkit-items">
+        <li>Hypothesis testing (Z, t, chi-square)</li>
+        <li>Linear &amp; logistic regression</li>
+        <li>A/B testing frameworks</li>
+        <li>Extreme Value Theory (GEV)</li>
+        <li>Confidence intervals &amp; Bayesian inference</li>
+      </ul>
+    </div>
+    <div class="toolkit-card">
+      <div class="toolkit-category">Machine Learning</div>
+      <ul class="toolkit-items">
+        <li>XGBoost, Random Forest</li>
+        <li>LSTM (time-series)</li>
+        <li>Prophet (forecasting)</li>
+        <li>Collaborative filtering</li>
+        <li>Classification &amp; regression</li>
+      </ul>
+    </div>
+    <div class="toolkit-card">
+      <div class="toolkit-category">Programming &amp; Data</div>
+      <ul class="toolkit-items">
+        <li>Python — pandas, numpy, sklearn</li>
+        <li>SQL (complex joins, window functions)</li>
+        <li>YouTube API, web scraping</li>
+        <li>Flask (web apps)</li>
+        <li>Jupyter, Git, VS Code</li>
+      </ul>
+    </div>
+    <div class="toolkit-card">
+      <div class="toolkit-category">Soft Skills</div>
+      <ul class="toolkit-items">
+        <li>Asking "why" five times</li>
+        <li>Explaining stats &amp; ML to non-experts</li>
+        <li>Structuring messy problems</li>
+        <li>Finding the question behind the question</li>
+        <li>Failing fast, iterating faster</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="philosophy-block reveal">
+    <p class="philosophy-text">
+      "Data is never neutral. Every dataset carries the fingerprints of how it was collected, who asked the question, and what was left out. My job is not to find answers. My job is to find better questions. A p-value is not a conclusion. A dashboard is not a decision. I am here to translate between the certain language of numbers and the uncertain reality of humans."
+    </p>
+    <div class="philosophy-attr">How I think about data</div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-name">AGWORA OMBATI BRIAN</span>
+  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
