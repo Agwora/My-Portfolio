@@ -8,7 +8,7 @@ Welcome to my data analyst portfolio. I'm a statistician and aspiring data scien
 
 ## 🔗 Live Demo
 
-[View Portfolio](#) *(Add your live link here after deployment)*
+https://agwora.github.io/My-Portfolio/
 
 ---
 
