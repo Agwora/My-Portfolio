@@ -1144,6 +1144,88 @@ footer {
   background: rgba(42,157,143,0.1);
 }
 
+/* Contact Page Enhancements */
+.contact-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+}
+
+.contact-headline {
+  font-family: var(--sans);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  color: var(--white);
+}
+
+.contact-headline em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  background: linear-gradient(135deg, var(--bright), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-note {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+.docs-note {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  margin-top: 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.contact-closing {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.closing-message {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--sky);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Contact links hover enhancement */
+.contact-link {
+  transition: all 0.25s ease;
+}
+
+.contact-link:hover {
+  transform: translateX(4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .contact-headline {
+    font-size: 1.8rem;
+  }
+  .contact-note {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  .closing-message {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+}
 /* Responsive adjustments for toolkit page */
 @media (max-width: 1100px) {
   .toolkit-grid {
