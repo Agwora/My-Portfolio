@@ -1037,6 +1037,133 @@ footer {
   margin-top: 1rem;
 }
 
+
+/* Toolkit Page Enhancements */
+.toolkit-intro {
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+.toolkit-intro-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.toolkit-card {
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.toolkit-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(42,157,143,0.4);
+  box-shadow: 0 15px 35px rgba(42,157,143,0.1);
+}
+
+.toolkit-category {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bright);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toolkit-items li {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(42,157,143,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: color 0.2s ease;
+}
+.toolkit-items li:hover {
+  color: var(--white);
+}
+.toolkit-items li::before {
+  content: '▸';
+  color: var(--mid);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+/* Soft Skills Block */
+.soft-skills-block {
+  margin: 3rem 0 3rem 0;
+  padding: 2rem;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  backdrop-filter: blur(10px);
+}
+.soft-skills-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bright);
+}
+.soft-icon {
+  font-size: 1.2rem;
+}
+.soft-title {
+  color: var(--bright);
+}
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.soft-skill {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 0.8rem;
+  text-align: center;
+  background: rgba(42,157,143,0.05);
+  border-left: 2px solid var(--mid);
+  transition: all 0.2s ease;
+}
+.soft-skill:hover {
+  color: var(--white);
+  border-left-color: var(--bright);
+  background: rgba(42,157,143,0.1);
+}
+
+/* Responsive adjustments for toolkit page */
+@media (max-width: 1100px) {
+  .toolkit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .soft-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .toolkit-grid {
+    grid-template-columns: 1fr;
+  }
+  .soft-skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .toolkit-intro-text {
+    font-size: 0.95rem;
+  }
+}
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .wants-intro-text {
