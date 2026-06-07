@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agwora Ombati Brian — Data Analyst | Home</title>
+<title>Agwora Ombati Brian — Data Scientist & ML Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   </a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="hobbies.html">Hobbies</a></li>
       <li><a href="wants.html">What I Want</a></li>
@@ -38,19 +38,21 @@
   <a href="contact.html" onclick="closeMobile()">Contact</a>
 </div>
 
+<!-- SECTION 1: HERO -->
 <section id="home">
   <div class="hero-left">
-    <div class="hero-eyebrow">Statistician &amp; Future Data Scientist</div>
+    <div class="hero-eyebrow">Statistician · ML Engineer · Problem Solver</div>
     <h1 class="hero-headline">
-      I don't<br>chase <em>jobs.</em><br>I chase<br>problems.
+      I turn<br>raw data into<br><em>decisions that matter.</em>
     </h1>
     <p class="hero-bio">
-      I build bridges between raw numbers and human decisions — whether that's explaining why a music video went viral or predicting what customers do before they do it.<br><br>
-      I'm not looking for a spot to fill. I'm looking for a team that wants to grow <em>with</em> me. If you see data as a conversation, not a commandment — we should talk.
+      I build bridges between statistical rigor and real-world impact — whether that's predicting when a crying baby will fall asleep, forecasting rain with 94% accuracy, or deploying production ML systems that actually stay online.
+      <br><br>
+      I'm looking for a team where I can grow, contribute meaningfully, and solve problems that don't have obvious answers. If you value curiosity over ego and rigor over hype — we should talk.
     </p>
     <div class="hero-btns">
-      <a href="contact.html" class="btn btn-primary">Let's Connect</a>
-      <a href="projects.html" class="btn btn-outline">See the Work</a>
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+      <a href="projects.html" class="btn btn-outline">See my work</a>
     </div>
   </div>
 
@@ -65,26 +67,153 @@
 
     <div class="hero-stats-row">
       <div class="hero-stat-card">
-        <div class="stat-num">6+</div>
-        <div class="stat-label">Data projects completed</div>
+        <div class="stat-num">94%</div>
+        <div class="stat-label">ROC-AUC · Weather Prediction</div>
       </div>
       <div class="hero-stat-card">
-        <div class="stat-num">5</div>
-        <div class="stat-label">ML frameworks used</div>
+        <div class="stat-num">Published</div>
+        <div class="stat-label">Paper · Stochastic Modeling</div>
       </div>
       <div class="hero-stat-card">
-        <div class="stat-num">∞</div>
-        <div class="stat-label">Questions left to ask</div>
+        <div class="stat-num">8</div>
+        <div class="stat-label">Production projects · 6 production-ready</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SECTION 2: THE THREAD THAT CONNECTS MY WORK -->
+<section id="thread" class="alt-section">
+  <div class="section-header reveal">
+    <span class="section-number">01</span>
+    <h2 class="section-title">The <em>thread</em> that runs through everything</h2>
+  </div>
+  <div class="thread-grid reveal">
+    <div class="thread-text">
+      <p class="thread-lead">I don't see projects as isolated tasks. I see them as variations of the same question:</p>
+      <p class="thread-quote">"How do we translate an observed phenomenon into a model that predicts, explains, or decides?"</p>
+      <p class="thread-body">A baby crying in cycles. A weather pattern shifting. A customer about to leave. Each is a signal buried in noise. Each requires the same disciplined process: observation, formalization, implementation, validation, and communication.</p>
+      <p class="thread-body">What changes is the toolset — stochastic processes for sleep prediction, deep learning for satellite imagery, MLOps for production stability. What stays constant is the respect for uncertainty and the commitment to finding better questions.</p>
+    </div>
+    <div class="thread-visual">
+      <div class="thread-chain">
+        <span class="chain-link">Observe</span>
+        <span class="chain-arrow">→</span>
+        <span class="chain-link">Formalize</span>
+        <span class="chain-arrow">→</span>
+        <span class="chain-link">Model</span>
+        <span class="chain-arrow">→</span>
+        <span class="chain-link">Validate</span>
+        <span class="chain-arrow">→</span>
+        <span class="chain-link">Deploy</span>
+      </div>
+      <div class="thread-examples">
+        <div class="example-item">Baby crying → Stochastic process</div>
+        <div class="example-item">Weather data → Ensemble + RAG</div>
+        <div class="example-item">Customer behavior → Production classifier</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: MY PHILOSOPHY -->
+<section id="philosophy">
+  <div class="section-header reveal">
+    <span class="section-number">02</span>
+    <h2 class="section-title">How I <em>think</em> about data</h2>
+  </div>
+  <div class="philosophy-container reveal">
+    <div class="philosophy-main">
+      <p class="philosophy-statement">"Data is never neutral. Every dataset carries the fingerprints of how it was collected, who asked the question, and what was left out."</p>
+      <p class="philosophy-statement">"My job is not to find answers. My job is to find better questions."</p>
+      <p class="philosophy-statement">"A p-value is not a conclusion. A dashboard is not a decision. I am here to translate between the certain language of numbers and the uncertain reality of humans."</p>
+    </div>
+    <div class="philosophy-principles">
+      <div class="principle">
+        <span class="principle-num">01</span>
+        <span class="principle-text">Start with the question, not the tool</span>
+      </div>
+      <div class="principle">
+        <span class="principle-num">02</span>
+        <span class="principle-text">Embrace uncertainty, communicate it honestly</span>
+      </div>
+      <div class="principle">
+        <span class="principle-num">03</span>
+        <span class="principle-text">Production > notebook. Always.</span>
+      </div>
+      <div class="principle">
+        <span class="principle-num">04</span>
+        <span class="principle-text">Explain simply without dumbing down</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: WHAT I'M LOOKING FOR -->
+<section id="looking-for" class="alt-section">
+  <div class="section-header reveal">
+    <span class="section-number">03</span>
+    <h2 class="section-title">What I'm <em>looking for</em></h2>
+  </div>
+  <div class="looking-grid reveal">
+    <div class="looking-card">
+      <div class="looking-icon">🎯</div>
+      <h3>Problems worth solving</h3>
+      <p>I thrive on ambiguity. Give me questions that don't have obvious answers — where the real work is figuring out what to measure, not just how to measure it.</p>
+    </div>
+    <div class="looking-card">
+      <div class="looking-icon">🤝</div>
+      <h3>Honest feedback</h3>
+      <p>Especially when it's uncomfortable. I want to grow, and I can't do that with polite silence. Challenge my assumptions. I'll thank you for it.</p>
+    </div>
+    <div class="looking-card">
+      <div class="looking-icon">🧠</div>
+      <h3>A team that values rigor</h3>
+      <p>Where "I don't know" is the start of a conversation, not the end of one. Where statistical thinking isn't seen as academic — it's seen as essential.</p>
+    </div>
+    <div class="looking-card">
+      <div class="looking-icon">📈</div>
+      <h3>A path to grow</h3>
+      <p>Not a ladder to climb — a trajectory to follow. From building models today to designing systems tomorrow. From individual contributor to technical leader.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: RECENT IMPACT -->
+<section id="impact">
+  <div class="section-header reveal">
+    <span class="section-number">04</span>
+    <h2 class="section-title">Recent <em>impact</em></h2>
+  </div>
+  <div class="impact-grid reveal">
+    <div class="impact-item">
+      <div class="impact-num">94%</div>
+      <div class="impact-desc">ROC-AUC on weather prediction — deployed ensemble of PyTorch + XGBoost with &lt;20ms latency</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">Published</div>
+      <div class="impact-desc">Full paper on stochastic modeling of infant sleep patterns — exponential decay + Monte Carlo</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">6/6</div>
+      <div class="impact-desc">Production ML checklist completed for churn prediction — SMOTE, threshold opt, fallback</div>
+    </div>
+    <div class="impact-item">
+      <div class="impact-num">50/s</div>
+      <div class="impact-desc">Sustained throughput on weather API — Docker + FastAPI + MLflow + DVC</div>
+    </div>
+  </div>
+  <div class="impact-cta reveal">
+    <p>These aren't academic exercises. Each project shipped with tests, documentation, and a clear path to production.</p>
+    <a href="projects.html" class="btn btn-outline">Explore all projects →</a>
+  </div>
+</section>
+
 <footer>
   <span class="footer-name">AGWORA OMBATI BRIAN</span>
-  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+  <span class="footer-closing">"Start before you're ready. You already have everything except momentum."</span>
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html>
+  </html>
