@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agwora Ombati Brian — What I Want</title>
+<title>Agwora Ombati Brian — What I Need & Want</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="wants.html">What I Want</a></li>
+      <li><a href="wants.html" class="active">What I Want</a></li>
       <li><a href="toolkit.html">Toolkit</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -43,27 +43,42 @@
     <span class="section-number">03</span>
     <h2 class="section-title">What I <em>Need.</em><br>What I <em>Want.</em></h2>
   </div>
+
+  <!-- INTRO PARAGRAPH -->
+  <div class="wants-intro reveal">
+    <p class="wants-intro-text">
+      I believe the best working relationships start with clarity. So here's mine — no ambiguity, no corporate filter. 
+      Just what I need to grow, what I want to build, and what I bring in return.
+    </p>
+  </div>
+
   <div class="wants-grid">
+    <!-- NEEDS COLUMN -->
     <div class="reveal">
-      <div class="wants-col-label">What I need (to be pushed)</div>
+      <div class="wants-col-label needs-label">What I need <span class="label-subtle">(to be pushed)</span></div>
       <ul class="wants-list">
         <li>A manager who challenges me — not one who just manages me.</li>
         <li>Honest feedback. Even when it's uncomfortable. Especially then.</li>
         <li>Problems that don't have obvious answers.</li>
         <li>A team where "I don't know" is the start of a conversation, not the end of one.</li>
+        <li>Permission to fail fast, learn faster, and iterate openly.</li>
       </ul>
     </div>
+
+    <!-- WANTS COLUMN -->
     <div class="reveal">
-      <div class="wants-col-label" style="color: var(--gold);">What I want (in my career)</div>
+      <div class="wants-col-label wants-label">What I want <span class="label-subtle">(in my career)</span></div>
       <ul class="wants-list">
         <li>To move from "reporting what happened" to "predicting what's next."</li>
         <li>To work where data empowers people — not just tracks them.</li>
         <li>To earn the title Data Scientist through real impact, not time served.</li>
         <li>To look back in 5 years knowing I grew faster than I expected.</li>
+        <li>To build systems that outlast any single role I hold.</li>
       </ul>
     </div>
   </div>
 
+  <!-- THE EXCHANGE TABLE -->
   <div class="both-benefit reveal">
     <div class="benefit-label">The Exchange — Why this works for both of us</div>
     <div class="benefit-table">
@@ -80,7 +95,7 @@
         <div class="benefit-cell them">Mentorship and honest feedback</div>
       </div>
       <div class="benefit-row">
-        <div class="benefit-cell you">Technical skills — Python, stats, APIs, ML</div>
+        <div class="benefit-cell you">Technical skills — Python, stats, PyTorch, XGBoost, MLOps, LLMs</div>
         <div class="benefit-cell them">Real data with real stakes</div>
       </div>
       <div class="benefit-row">
@@ -88,18 +103,26 @@
         <div class="benefit-cell them">A career path, not just a paycheck</div>
       </div>
       <div class="benefit-row">
-        <div class="benefit-cell you">Stats &amp; ML explained to non-technical people</div>
-        <div class="benefit-cell them">A team that respects the craft</div>
+        <div class="benefit-cell you">Stats, ML, and uncertainty communicated clearly to non-technical people</div>
+        <div class="benefit-cell them">A team that respects the craft and the person behind it</div>
       </div>
+    </div>
+  </div>
+
+  <!-- CLOSING REFLECTION + CTA -->
+  <div class="wants-closing reveal">
+    <p class="closing-quote">"I'm not looking for a job that checks boxes. I'm looking for a team where we grow together — through hard problems, honest conversations, and shared curiosity."</p>
+    <div class="closing-cta">
+      <a href="contact.html" class="btn btn-primary">If this resonates, let's talk →</a>
     </div>
   </div>
 </section>
 
 <footer>
   <span class="footer-name">AGWORA OMBATI BRIAN</span>
-  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+  <span class="footer-closing">"Start before you're ready. You already have everything except momentum."</span>
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html>
+  </html>
