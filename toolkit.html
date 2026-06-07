@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agwora Ombati Brian — Toolkit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="hobbies.html">Hobbies</a></li>
       <li><a href="wants.html">What I Want</a></li>
-      <li><a href="toolkit.html">Toolkit</a></li>
+      <li><a href="toolkit.html" class="active">Toolkit</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -43,49 +43,94 @@
     <span class="section-number">04</span>
     <h2 class="section-title">The <em>Toolkit</em></h2>
   </div>
+
+  <!-- INTRO PARAGRAPH -->
+  <div class="toolkit-intro reveal">
+    <p class="toolkit-intro-text">
+      Tools are just instruments. What matters is knowing which one to reach for — and when to build something new. 
+      Here's what I currently reach for most often, organized by how I think about problems.
+    </p>
+  </div>
+
   <div class="toolkit-grid reveal">
+    <!-- CARD 1: Statistics & Mathematical Modeling -->
     <div class="toolkit-card">
-      <div class="toolkit-category">Stats &amp; Testing</div>
+      <div class="toolkit-category">📊 Statistics &amp; Mathematical Modeling</div>
       <ul class="toolkit-items">
-        <li>Hypothesis testing (Z, t, chi-square)</li>
+        <li>Hypothesis testing (Z, t, chi-square, two-proportion)</li>
         <li>Linear &amp; logistic regression</li>
+        <li>Extreme Value Theory (GEV, Block Maxima)</li>
+        <li>Monte Carlo methods &amp; simulation</li>
+        <li>Stochastic processes (exponential decay, logistic growth)</li>
+        <li>Bayesian inference &amp; confidence intervals</li>
         <li>A/B testing frameworks</li>
-        <li>Extreme Value Theory (GEV)</li>
-        <li>Confidence intervals &amp; Bayesian inference</li>
       </ul>
     </div>
+
+    <!-- CARD 2: Machine Learning & Deep Learning -->
     <div class="toolkit-card">
-      <div class="toolkit-category">Machine Learning</div>
+      <div class="toolkit-category">🤖 Machine Learning &amp; Deep Learning</div>
       <ul class="toolkit-items">
-        <li>XGBoost, Random Forest</li>
-        <li>LSTM (time-series)</li>
-        <li>Prophet (forecasting)</li>
-        <li>Collaborative filtering</li>
-        <li>Classification &amp; regression</li>
+        <li>XGBoost, Random Forest, Scikit-learn</li>
+        <li>PyTorch (neural networks, custom architectures)</li>
+        <li>LSTM (time-series forecasting)</li>
+        <li>Prophet (seasonal decomposition, forecasting)</li>
+        <li>ResNet50 (transfer learning, satellite imagery)</li>
+        <li>Collaborative filtering (recommendation systems)</li>
+        <li>Classification &amp; regression (binary, multi-class)</li>
       </ul>
     </div>
+
+    <!-- CARD 3: MLOps & Production Systems -->
     <div class="toolkit-card">
-      <div class="toolkit-category">Programming &amp; Data</div>
+      <div class="toolkit-category">⚙️ MLOps &amp; Production Systems</div>
       <ul class="toolkit-items">
-        <li>Python — pandas, numpy, sklearn</li>
-        <li>SQL (complex joins, window functions)</li>
-        <li>YouTube API, web scraping</li>
-        <li>Flask (web apps)</li>
-        <li>Jupyter, Git, VS Code</li>
+        <li>FastAPI (REST APIs, async, batch prediction)</li>
+        <li>Docker &amp; docker-compose (containerization)</li>
+        <li>MLflow (experiment tracking, model registry)</li>
+        <li>DVC (data versioning, S3-compatible storage)</li>
+        <li>PSI drift detection &amp; automated retraining alerts</li>
+        <li>SMOTE (class imbalance handling)</li>
+        <li>ROC threshold optimization (business ROI alignment)</li>
+        <li>Rule-based fallbacks (fail-safe design)</li>
+        <li>Unit testing (85%+ coverage with pytest)</li>
       </ul>
     </div>
+
+    <!-- CARD 4: LLMs, RAG & Programming -->
     <div class="toolkit-card">
-      <div class="toolkit-category">Soft Skills</div>
+      <div class="toolkit-category">🧠 LLMs, RAG &amp; Programming</div>
       <ul class="toolkit-items">
-        <li>Asking "why" five times</li>
-        <li>Explaining stats &amp; ML to non-experts</li>
-        <li>Structuring messy problems</li>
-        <li>Finding the question behind the question</li>
-        <li>Failing fast, iterating faster</li>
+        <li>LangChain (RAG pipeline orchestration)</li>
+        <li>ChromaDB (vector database for embeddings)</li>
+        <li>OpenAI API (GPT, structured JSON outputs)</li>
+        <li>Sentence Transformers (384-dim document embeddings)</li>
+        <li>Python (pandas, numpy, sklearn, PyTorch)</li>
+        <li>SQL (complex joins, window functions, aggregations)</li>
+        <li>YouTube API, web scraping (BeautifulSoup)</li>
+        <li>Flask (lightweight web apps)</li>
+        <li>Git, Jupyter, VS Code</li>
       </ul>
     </div>
   </div>
 
+  <!-- SOFT SKILLS SECTION (Bonus) -->
+  <div class="soft-skills-block reveal">
+    <div class="soft-skills-header">
+      <span class="soft-icon">🧠</span>
+      <span class="soft-title">The invisible toolkit — how I think</span>
+    </div>
+    <div class="soft-skills-grid">
+      <div class="soft-skill">Asking "why" five times deep</div>
+      <div class="soft-skill">Explaining stats &amp; ML to non-technical stakeholders</div>
+      <div class="soft-skill">Structuring ambiguous, messy problems</div>
+      <div class="soft-skill">Finding the question behind the question</div>
+      <div class="soft-skill">Failing fast, iterating faster</div>
+      <div class="soft-skill">Translating uncertainty into actionable insights</div>
+    </div>
+  </div>
+
+  <!-- PHILOSOPHY BLOCK (Preserved) -->
   <div class="philosophy-block reveal">
     <p class="philosophy-text">
       "Data is never neutral. Every dataset carries the fingerprints of how it was collected, who asked the question, and what was left out. My job is not to find answers. My job is to find better questions. A p-value is not a conclusion. A dashboard is not a decision. I am here to translate between the certain language of numbers and the uncertain reality of humans."
@@ -96,7 +141,7 @@
 
 <footer>
   <span class="footer-name">AGWORA OMBATI BRIAN</span>
-  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+  <span class="footer-closing">"Start before you're ready. You already have everything except momentum."</span>
 </footer>
 
 <script src="script.js"></script>
