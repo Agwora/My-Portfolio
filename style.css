@@ -17,7 +17,21 @@
   --gold:    #e8b84b;
   --mono: 'JetBrains Mono', monospace;
   --serif: 'Crimson Pro', serif;
-  --display: 'Syne', sans-serif;
+  --sans: 'Inter', sans-serif;  /* NEW - professional sans-serif */
+}
+
+body {
+  font-family: var(--sans);  /* Changed from --display */
+  font-weight: 400;
+}
+
+.nav-logo, .hero-headline, .section-title, .project-title, .hobby-name, .looking-card h3 {
+  font-family: var(--sans);  /* Professional, not a display font */
+  font-weight: 700;
+}
+
+.hero-headline em, .section-title em {
+  font-family: var(--serif);  /* Keep italic serif for emphasis */
 }
 
 html { scroll-behavior: smooth; font-size: 16px; }
