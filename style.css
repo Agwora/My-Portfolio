@@ -931,6 +931,125 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Wants Page Enhancements */
+.wants-intro {
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+.wants-intro-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.wants-col-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.needs-label {
+  color: var(--bright);
+}
+.wants-label {
+  color: var(--gold);
+}
+.label-subtle {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  font-weight: normal;
+}
+.wants-col-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.wants-list li {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: rgba(240,246,255,0.85);
+  line-height: 1.65;
+  padding: 1.1rem 0 1.1rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  transition: all 0.2s ease;
+}
+.wants-list li:hover {
+  padding-left: 1.8rem;
+  color: var(--white);
+}
+.wants-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  font-style: normal;
+}
+.wants-list li:first-child {
+  padding-top: 0;
+}
+.wants-list li:last-child {
+  border-bottom: none;
+}
+
+/* Benefit Table - slight enhancement */
+.benefit-cell {
+  background: var(--glass);
+  padding: 1.1rem 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(240,246,255,0.85);
+  line-height: 1.5;
+  backdrop-filter: blur(10px);
+  transition: background 0.2s ease;
+}
+.benefit-cell:hover {
+  background: rgba(42,157,143,0.1);
+}
+
+/* Closing Section */
+.wants-closing {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+.closing-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--sky);
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+.closing-cta {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .wants-intro-text {
+    font-size: 1rem;
+  }
+  .closing-quote {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .wants-list li {
+    font-size: 0.95rem;
+  }
+  }
 /* Responsive adjustments for hobbies page */
 @media (max-width: 900px) {
   .hobbies-intro-text {
