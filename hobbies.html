@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agwora Ombati Brian — Hobbies</title>
+<title>Agwora Ombati Brian — Hobbies & Curiosity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="hobbies.html" class="active">Hobbies</a></li>
       <li><a href="wants.html">What I Want</a></li>
       <li><a href="toolkit.html">Toolkit</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -43,38 +43,58 @@
     <span class="section-number">02</span>
     <h2 class="section-title">The <em>Human</em><br>Behind the Data</h2>
   </div>
+  
+  <div class="hobbies-intro reveal">
+    <p class="hobbies-intro-text">
+      The best data scientists don't just write code. They cultivate curiosity everywhere — at the chessboard, 
+      in the charts, on the court, and between the pages of research papers. Here's how my hobbies shape 
+      how I think about data, models, and uncertainty.
+    </p>
+  </div>
+
   <div class="hobbies-grid">
     <div class="hobby-card reveal">
       <span class="hobby-icon">🎧</span>
       <div class="hobby-name">Music Chart Analysis</div>
-      <p class="hobby-why">When a song climbs the charts, I don't just listen — I ask why. What changed in week three? Why did streaming spike on Tuesday? I naturally turn observed patterns into hypotheses.</p>
-      <div class="hobby-insight">Skill transfer → Asking "why" when numbers move</div>
+      <p class="hobby-why">When Burna Boy jumps 14 spots overnight, I don't just stream — I ask why. Playlist placement? TikTok trend? Radio add? A new music video? I've built small Python scripts to pull chart data from Spotify and Apple Music APIs, looking for statistical anomalies in streaming velocity.</p>
+      <div class="hobby-insight">🧠 Skill transfer → Hypothesis generation · Anomaly detection · API thinking</div>
     </div>
+    
     <div class="hobby-card reveal">
       <span class="hobby-icon">♟️</span>
       <div class="hobby-name">Chess &amp; Strategy</div>
-      <p class="hobby-why">Every move is a conditional probability. Chess trained me to think in branching outcomes, to sacrifice short-term advantage for structural superiority.</p>
-      <div class="hobby-insight">Skill transfer → Pattern recognition, 3 moves ahead</div>
+      <p class="hobby-why">Rated 1400 on Lichess. Every position is a probability tree — what's my best move given what my opponent might do? Chess taught me to calculate branching outcomes, sacrifice short-term advantage for structural superiority, and recognize when to simplify complexity.</p>
+      <div class="hobby-insight">🧠 Skill transfer → Decision trees · Trade-off analysis · Positional thinking · Minimax reasoning</div>
     </div>
+    
     <div class="hobby-card reveal">
       <span class="hobby-icon">📖</span>
       <div class="hobby-name">Behavioral Economics</div>
-      <p class="hobby-why">Kahneman, Thaler, Ariely — I read them because I believe data without human context is just decoration.</p>
-      <div class="hobby-insight">Skill transfer → Context over raw numbers</div>
+      <p class="hobby-why">Kahneman, Thaler, Ariely — I read them because data without human context is just decoration. Understanding cognitive biases (anchoring, availability heuristic, loss aversion) makes me a better analyst of human-generated data. People don't behave like rational agents, and good models account for that.</p>
+      <div class="hobby-insight">🧠 Skill transfer → Bias detection · Causal inference · User behavior modeling · Survey design</div>
     </div>
+    
     <div class="hobby-card reveal">
       <span class="hobby-icon">🏀</span>
       <div class="hobby-name">Basketball Analytics</div>
-      <p class="hobby-why">Box scores lie. PER is incomplete. Sports taught me to distrust surface metrics and always ask for context.</p>
-      <div class="hobby-insight">Skill transfer → Questioning the obvious stat</div>
+      <p class="hobby-why">Box scores lie. PER is incomplete without usage rate and opponent adjustment. The NBA analytics revolution taught me: always ask what a metric leaves out. I follow the work of Kirk Goldsberry, Darryl Morey, and the stats behind the modern game.</p>
+      <div class="hobby-insight">🧠 Skill transfer → Metric design · Context awareness · Skepticism of surface stats · Efficiency vs volume</div>
+    </div>
+    
+    <div class="hobby-card reveal">
+      <span class="hobby-icon">📄</span>
+      <div class="hobby-name">Reading Research Papers</div>
+      <p class="hobby-why">Every week I read 1-2 papers from ArXiv, ACL, or ICML proceedings. Recent favorites: 'Attention is All You Need' (original Transformer paper), 'Dropout as a Bayesian Approximation', and 'RAG for Open-Domain Question Answering'. I implement small-scale versions of what I learn — it's how I stay current without waiting for courses.</p>
+      <div class="hobby-insight">🧠 Skill transfer → Continuous learning · Literature synthesis · Implementation from scratch · Staying current</div>
     </div>
   </div>
-  <p class="hobbies-footer reveal">"I don't just collect hobbies. I collect questions."</p>
+  
+  <p class="hobbies-footer reveal">"I don't just collect hobbies. I collect questions — and the discipline to chase answers."</p>
 </section>
 
 <footer>
   <span class="footer-name">AGWORA OMBATI BRIAN</span>
-  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+  <span class="footer-closing">"Start before you're ready. You already have everything except momentum."</span>
 </footer>
 
 <script src="script.js"></script>
