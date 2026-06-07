@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Agwora Ombati Brian — Projects</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Crimson+Pro:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
   <div class="nav-right">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="hobbies.html">Hobbies</a></li>
       <li><a href="wants.html">What I Want</a></li>
       <li><a href="toolkit.html">Toolkit</a></li>
@@ -44,10 +44,168 @@
     <h2 class="section-title">The <em>Evidence</em></h2>
   </div>
 
-  <!-- Project 1: Rivalry Effect -->
+  <!-- PROJECT 1: Weather Prediction System (Strongest) -->
   <div class="project-card reveal">
     <div class="project-meta">
       <div class="project-index">01</div>
+      <div class="project-tags">
+        <span class="tag">PyTorch</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">LangChain</span>
+        <span class="tag">RAG</span>
+        <span class="tag">Docker</span>
+        <span class="tag">MLflow</span>
+        <span class="tag">DVC</span>
+        <span class="tag">ResNet50</span>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Weather Prediction System — Full MLOps + LLM/RAG</h3>
+      <p class="project-hook">94% ROC-AUC. Real-time predictions. Natural language Q&A. Production-ready.</p>
+      <p class="project-desc">
+        End-to-end weather prediction platform featuring PyTorch neural networks, XGBoost, and ensemble methods achieving 94% ROC-AUC.
+        Deployed as FastAPI microservice with Docker containerization, MLflow experiment tracking (50+ runs), DVC data versioning,
+        and PSI-based drift detection. Built a RAG pipeline with LangChain + ChromaDB + OpenAI for conversational weather Q&A.
+        Applied transfer learning with ResNet50 for satellite image classification (94% accuracy).
+      </p>
+      <div class="project-findings">
+        <div class="finding"><div class="finding-val">94%</div><div class="finding-desc">ROC-AUC (ensemble)</div></div>
+        <div class="finding"><div class="finding-val">&lt;20ms</div><div class="finding-desc">Latency per prediction</div></div>
+        <div class="finding"><div class="finding-val">50/s</div><div class="finding-desc">Sustained throughput</div></div>
+      </div>
+      <div class="project-takeaway">
+        15% improvement over standard weather APIs. Detects 94% of rain events before they happen.
+        Modular package with 85% test coverage, SHAP explanations, and automated EDA reports.
+      </div>
+      <div class="project-btns">
+        <a href="https://github.com/Agwora/weather-prediction" target="_blank" class="btn-sm">GitHub →</a>
+        <a href="#" class="btn-sm">API Docs (provided in a short while) →</a>
+        <a href="#" class="btn-sm">Live Demo (provided in a short while) →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 2: Baby Crying — Stochastic Process (with Paper) -->
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-index">02</div>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Monte Carlo</span>
+        <span class="tag">Stochastic Process</span>
+        <span class="tag">Exponential Decay</span>
+        <span class="tag">Logistic Growth</span>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Baby Sleep Prediction — Stochastic Process Model</h3>
+      <p class="project-hook">Can we predict when a crying baby will fall asleep? A mathematical answer.</p>
+      <p class="project-desc">
+        I started with a behavioral observation — a baby crying in cycles that gradually settle into sleep.
+        I formalized this as a stochastic process with exponential decay for cry duration and logistic growth
+        for pauses, incorporating autocorrelation, circadian modulation, and a random stopping time for sleep onset.
+        <br><br>
+        I implemented the model in Python as a generative simulation, then used Monte Carlo methods to estimate
+        the distribution of sleep time given a start time of 21:00. The model produces a mean sleep time around
+        21:47 with a 95% prediction interval of about 30 minutes.
+      </p>
+      <div class="project-findings">
+        <div class="finding"><div class="finding-val">21:47</div><div class="finding-desc">Mean sleep time</div></div>
+        <div class="finding"><div class="finding-val">±30 min</div><div class="finding-desc">95% prediction interval</div></div>
+        <div class="finding"><div class="finding-val">10K+</div><div class="finding-desc">Monte Carlo simulations</div></div>
+      </div>
+      <div class="project-takeaway">
+        Key limitations: truncated normality for noise, no external interventions.
+        This model should never replace parental attention. Future work: Bayesian hierarchical modeling across infants.
+        This project demonstrates my ability to translate real-world phenomena into rigorous statistical models,
+        implement them efficiently, and communicate uncertainty meaningfully.
+      </div>
+      <div class="project-btns">
+        <a href="baby_crying_stochastic_model.pdf" target="_blank" class="btn-sm">📄 Full Paper →</a>
+        <a href="https://github.com/Agwora/baby-crying-model" target="_blank" class="btn-sm">GitHub →</a>
+        <a href="#" class="btn-sm">Streamlit App (provided in a short while) →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3: Telco Customer Churn Prediction (Production ML) -->
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-index">03</div>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">SMOTE</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Production</span>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Telco Customer Churn — Production ML System</h3>
+      <p class="project-hook">Production-ready churn prediction with complete ML checklist.</p>
+      <p class="project-desc">
+        Built a production-ready churn prediction system demonstrating all 6 junior data scientist checklist items:
+        data integrity checks, leakage prevention (train/test split BEFORE scaling), class imbalance handling (SMOTE + class_weight='balanced'),
+        multicollinearity checks (VIF), threshold optimization via ROC curve, and a rule-based fallback for fail-safe design.
+        Deployed as a FastAPI microservice with comprehensive error handling.
+      </p>
+      <div class="project-findings">
+        <div class="finding"><div class="finding-val">6/6</div><div class="finding-desc">ML checklist complete</div></div>
+        <div class="finding"><div class="finding-val">SMOTE</div><div class="finding-desc">Class imbalance fixed</div></div>
+        <div class="finding"><div class="finding-val">Fallback</div><div class="finding-desc">Rule-based safety net</div></div>
+      </div>
+      <div class="project-takeaway">
+        From notebook to production. Every requirement checked, tested, and deployed.
+        Threshold optimized for business ROI, not just accuracy.
+      </div>
+      <div class="project-btns">
+        <a href="https://github.com/Agwora/telco-churn" target="_blank" class="btn-sm">GitHub →</a>
+        <a href="#" class="btn-sm">API Docs (provided in a short while) →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 4: Earth's Carrying Capacity (with Paper) -->
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-index">04</div>
+      <div class="project-tags">
+        <span class="tag">Prophet</span>
+        <span class="tag">LSTM</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Monte Carlo</span>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Earth's Carrying Capacity — Hybrid ML Framework</h3>
+      <p class="project-hook">When will we exceed sustainable thresholds? A statistical answer.</p>
+      <p class="project-desc">
+        Developed a hybrid statistical-ML framework to estimate Earth's population threshold exceedance timing.
+        Used UN population data (1950-2100 projections), ecological footprint analyses, and Monte Carlo simulations
+        under six scenarios: baseline logistic growth, demographic transition, resource constraints, stochastic shocks
+        (pandemics/warfare), cosmic/geological parameters, and natural regeneration dynamics. Employed Prophet for
+        time-series, LSTM for nonlinear patterns, and XGBoost for feature importance.
+      </p>
+      <div class="project-findings">
+        <div class="finding"><div class="finding-val">2040-80</div><div class="finding-desc">Medium-K threshold window</div></div>
+        <div class="finding"><div class="finding-val">15B</div><div class="finding-desc">High-K scenario: 2150+</div></div>
+        <div class="finding"><div class="finding-val">4.8B</div><div class="finding-desc">Low-K: already exceeded</div></div>
+      </div>
+      <div class="project-takeaway">
+        The answer depends on your carrying capacity assumption — but under most realistic scenarios, the window is this century.
+        Policy recommendations and data collection priorities included in the full paper.
+      </div>
+      <div class="project-btns">
+        <a href="carrying_capacity_paper.pdf" target="_blank" class="btn-sm">📄 Full Paper →</a>
+        <a href="https://github.com/Agwora/carrying-capacity" target="_blank" class="btn-sm">GitHub →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT 5: The Rivalry Effect -->
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-index">05</div>
       <div class="project-tags">
         <span class="tag">Python</span>
         <span class="tag">YouTube API</span>
@@ -57,25 +215,29 @@
     </div>
     <div class="project-content">
       <h3 class="project-title">The Rivalry Effect</h3>
-      <p class="project-hook">Quantifying how conflict drives music video views.</p>
-      <p class="project-desc">Two East African music videos. Same lead artist. Dramatically different trajectories. I decomposed view velocity, classified comment sentiment, and ran a two-proportion Z-test to isolate whether the spike was organic or conflict-driven.</p>
+      <p class="project-hook">Quantifying how conflict drives music video views — and what it actually means for long-term growth.</p>
+      <p class="project-desc">
+        Two East African music videos. Same lead artist (Bien). Dramatically different trajectories. "Finale" hit 10M views in 11 days while "Katam" took 9 months.
+        I decomposed view velocity, classified comment sentiment using basic NLP, and ran a two-proportion Z-test to isolate whether the spike was organic or conflict-driven.
+        It was conflict-driven — and the data proved it.
+      </p>
       <div class="project-findings">
-        <div class="finding"><div class="finding-val">5.6×</div><div class="finding-desc">Velocity multiplier</div></div>
-        <div class="finding"><div class="finding-val">43%</div><div class="finding-desc">Rivalry comments</div></div>
-        <div class="finding"><div class="finding-val">p &lt; 0.001</div><div class="finding-desc">Significant</div></div>
+        <div class="finding"><div class="finding-val">5.6×</div><div class="finding-desc">Early velocity multiplier</div></div>
+        <div class="finding"><div class="finding-val">43%</div><div class="finding-desc">Rivalry comments vs 8% baseline</div></div>
+        <div class="finding"><div class="finding-val">p &lt; 0.001</div><div class="finding-desc">Statistically significant</div></div>
       </div>
-      <div class="project-takeaway">Viral ≠ Valuable. Conflict-driven growth is borrowed attention.</div>
+      <div class="project-takeaway">Viral ≠ Valuable. Conflict-driven growth is borrowed attention. Long-tail organic assets win.</div>
       <div class="project-btns">
-        <a href="https://github.com/Agwora" target="_blank" class="btn-sm">GitHub →</a>
-        <a href="#" class="btn-sm">Case Study →</a>
+        <a href="https://github.com/Agwora/rivalry-effect" target="_blank" class="btn-sm">GitHub →</a>
+        <a href="#" class="btn-sm">Case Study (provided in a short while) →</a>
       </div>
     </div>
   </div>
 
-  <!-- Project 2: Loan Default -->
+  <!-- PROJECT 6: Loan Default Prediction -->
   <div class="project-card reveal">
     <div class="project-meta">
-      <div class="project-index">02</div>
+      <div class="project-index">06</div>
       <div class="project-tags">
         <span class="tag">Python</span>
         <span class="tag">XGBoost</span>
@@ -85,51 +247,28 @@
     <div class="project-content">
       <h3 class="project-title">Loan Default Prediction</h3>
       <p class="project-hook">Can we predict who will default before they miss a payment?</p>
-      <p class="project-desc">Built a binary classification model to predict loan default risk. Compared logistic regression, random forest, and XGBoost. Feature engineering from credit history, income stability, and debt-to-income ratios.</p>
+      <p class="project-desc">
+        Built a binary classification model to predict loan default risk using historical lending data.
+        Compared logistic regression, random forest, and XGBoost. Feature engineering from credit history,
+        income stability, and debt-to-income ratios. Optimized for recall to minimize false negatives that cost lenders money.
+      </p>
       <div class="project-findings">
-        <div class="finding"><div class="finding-val">89%</div><div class="finding-desc">AUC-ROC</div></div>
+        <div class="finding"><div class="finding-val">89%</div><div class="finding-desc">AUC-ROC (XGBoost)</div></div>
         <div class="finding"><div class="finding-val">0.82</div><div class="finding-desc">F1-score</div></div>
         <div class="finding"><div class="finding-val">DTI</div><div class="finding-desc">Top predictor</div></div>
       </div>
-      <div class="project-takeaway">Debt-to-income ratio beats raw income every time.</div>
+      <div class="project-takeaway">Debt-to-income ratio beats raw income every time. Behavior patterns matter more than static attributes.</div>
       <div class="project-btns">
         <a href="https://github.com/Agwora/loan-default-prediction" target="_blank" class="btn-sm">GitHub →</a>
-        <a href="#" class="btn-sm">Notebook →</a>
+        <a href="#" class="btn-sm">Notebook (provided in a short while) →</a>
       </div>
     </div>
   </div>
 
-  <!-- Project 3: Extreme Value Theory -->
+  <!-- PROJECT 7: Car Hire + Recommendation System -->
   <div class="project-card reveal">
     <div class="project-meta">
-      <div class="project-index">03</div>
-      <div class="project-tags">
-        <span class="tag">EVT</span>
-        <span class="tag">Block Maxima</span>
-        <span class="tag">GEV</span>
-      </div>
-    </div>
-    <div class="project-content">
-      <h3 class="project-title">Extreme Value Theory — BMM</h3>
-      <p class="project-hook">Modeling rare events: when extremes matter more than averages.</p>
-      <p class="project-desc">Applied Extreme Value Theory using the Block Maxima Method to model tail risk. Fitted Generalized Extreme Value (GEV) distributions to estimate return levels for 10, 50, and 100-year events.</p>
-      <div class="project-findings">
-        <div class="finding"><div class="finding-val">GEV</div><div class="finding-desc">κ ≈ -0.23</div></div>
-        <div class="finding"><div class="finding-val">100-yr</div><div class="finding-desc">4.2σ event</div></div>
-        <div class="finding"><div class="finding-val">3×</div><div class="finding-desc">Gaussian underestimates</div></div>
-      </div>
-      <div class="project-takeaway">Normal distributions kill risk models. EVT is what you use when tails tell the real story.</div>
-      <div class="project-btns">
-        <a href="https://github.com/Agwora/extreme-value-theory" target="_blank" class="btn-sm">GitHub →</a>
-        <a href="#" class="btn-sm">Paper →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 4: Car Hire Recommendation -->
-  <div class="project-card reveal">
-    <div class="project-meta">
-      <div class="project-index">04</div>
+      <div class="project-index">07</div>
       <div class="project-tags">
         <span class="tag">Python</span>
         <span class="tag">Flask</span>
@@ -139,7 +278,11 @@
     <div class="project-content">
       <h3 class="project-title">Car Hire + Recommendation System</h3>
       <p class="project-hook">"You might also like" — but for rental cars.</p>
-      <p class="project-desc">Built a full-stack car rental platform with a recommendation engine. Hybrid approach: collaborative filtering for returning users, content-based for new users (cold start).</p>
+      <p class="project-desc">
+        Built a full-stack car rental platform with a recommendation engine. Users receive personalized vehicle suggestions
+        based on rental history, search behavior, and collaborative filtering across similar user profiles.
+        Implemented content-based filtering for new users (cold start) and hybrid recommendations for returning customers.
+      </p>
       <div class="project-findings">
         <div class="finding"><div class="finding-val">+34%</div><div class="finding-desc">Click-through rate</div></div>
         <div class="finding"><div class="finding-val">Hybrid</div><div class="finding-desc">CF + content-based</div></div>
@@ -148,55 +291,38 @@
       <div class="project-takeaway">Recommendation engines aren't just for e-commerce. Any matching problem benefits from user-item affinity modeling.</div>
       <div class="project-btns">
         <a href="https://github.com/Agwora/carhire-recsys" target="_blank" class="btn-sm">GitHub →</a>
-        <a href="#" class="btn-sm">Live Demo →</a>
+        <a href="#" class="btn-sm">Live Demo (provided in a short while) →</a>
       </div>
     </div>
   </div>
 
-  <!-- Project 5: Carrying Capacity -->
+  <!-- PROJECT 8: Extreme Value Theory (BMM) -->
   <div class="project-card reveal">
     <div class="project-meta">
-      <div class="project-index">05</div>
+      <div class="project-index">08</div>
       <div class="project-tags">
-        <span class="tag">Prophet</span>
-        <span class="tag">LSTM</span>
-        <span class="tag">XGBoost</span>
-        <span class="tag">Monte Carlo</span>
+        <span class="tag">EVT</span>
+        <span class="tag">Block Maxima</span>
+        <span class="tag">GEV</span>
       </div>
     </div>
     <div class="project-content">
-      <h3 class="project-title">Earth's Carrying Capacity</h3>
-      <p class="project-hook">When will we exceed sustainable thresholds? A statistical answer.</p>
-      <p class="project-desc">Hybrid statistical-ML framework using UN population data, ecological footprints, and Monte Carlo simulations under six scenarios. Prophet for time-series, LSTM for nonlinear patterns, XGBoost for feature importance.</p>
+      <h3 class="project-title">Extreme Value Theory — Block Maxima Model</h3>
+      <p class="project-hook">Modeling rare events: when extremes matter more than averages.</p>
+      <p class="project-desc">
+        Applied Extreme Value Theory using the Block Maxima Method to model tail risk in financial returns and natural phenomena.
+        Fitted Generalized Extreme Value (GEV) distributions to block-maxima series. Estimated return levels for 10-year, 50-year,
+        and 100-year events. Critical for risk management where normal distributions fail.
+      </p>
       <div class="project-findings">
-        <div class="finding"><div class="finding-val">2040-80</div><div class="finding-desc">Medium-K window</div></div>
-        <div class="finding"><div class="finding-val">15B</div><div class="finding-desc">High-K: 2150+</div></div>
-        <div class="finding"><div class="finding-val">4.8B</div><div class="finding-desc">Low-K: exceeded</div></div>
+        <div class="finding"><div class="finding-val">GEV</div><div class="finding-desc">Shape parameter κ ≈ -0.23</div></div>
+        <div class="finding"><div class="finding-val">100-yr</div><div class="finding-desc">Return level: 4.2σ event</div></div>
+        <div class="finding"><div class="finding-val">3×</div><div class="finding-desc">Gaussian underestimates</div></div>
       </div>
-      <div class="project-takeaway">The answer depends on your carrying capacity assumption — but under most realistic scenarios, the window is this century.</div>
+      <div class="project-takeaway">Normal distributions kill risk models. EVT is what you use when tails tell the real story.</div>
       <div class="project-btns">
-        <a href="https://github.com/Agwora/carrying-capacity" target="_blank" class="btn-sm">GitHub →</a>
-        <a href="#" class="btn-sm">Full Paper →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project 6: Placeholder -->
-  <div class="project-card reveal">
-    <div class="project-meta">
-      <div class="project-index">06</div>
-      <div class="project-tags">
-        <span class="tag">Coming</span>
-        <span class="tag">Soon</span>
-      </div>
-    </div>
-    <div class="project-content">
-      <h3 class="project-title">Next Question</h3>
-      <p class="project-hook">The data doesn't run out. Neither does curiosity.</p>
-      <p class="project-desc">This slot is reserved for the next problem that won't let me sleep until I understand it.</p>
-      <div class="project-takeaway">Currently accepting interesting data challenges. Send me your weirdest question.</div>
-      <div class="project-btns">
-        <a href="contact.html" class="btn-sm">Challenge me →</a>
+        <a href="https://github.com/Agwora/extreme-value-theory" target="_blank" class="btn-sm">GitHub →</a>
+        <a href="#" class="btn-sm">Paper (provided in a short while) →</a>
       </div>
     </div>
   </div>
@@ -204,9 +330,9 @@
 
 <footer>
   <span class="footer-name">AGWORA OMBATI BRIAN</span>
-  <span class="footer-closing">"You don't need permission to start. You already have everything except momentum."</span>
+  <span class="footer-closing">"Start before you're ready. You already have everything except momentum."</span>
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html>
+    </html>
